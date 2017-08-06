@@ -1,11 +1,31 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.16
+VisualStudioVersion = 15.0.26430.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{71A06D10-5BE4-4BB8-ADF6-44B687350549}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{FD8DF613-FBEC-410F-9076-DF19BB00DA95}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{FD64B5A5-3B70-4AE1-968E-7063F3A133A0}"
+	ProjectSection(SolutionItems) = preProject
+		Server\clients.php = Server\clients.php
+		Server\connect.php = Server\connect.php
+		Server\index.php = Server\index.php
+		Server\ip.php = Server\ip.php
+		Server\login.php = Server\login.php
+		Server\logout.php = Server\logout.php
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "includes", "includes", "{0E8698DB-B376-45A8-AD8E-630934CBB81B}"
+	ProjectSection(SolutionItems) = preProject
+		Server\includes\connect.php = Server\includes\connect.php
+		Server\includes\footer.php = Server\includes\footer.php
+		Server\includes\header.php = Server\includes\header.php
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "styles", "styles", "{C742C2C1-EE52-4675-BAA5-5700B40F8AE2}"
+	ProjectSection(SolutionItems) = preProject
+		Server\styles\style.css = Server\styles\style.css
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,12 +37,12 @@ Global
 		{71A06D10-5BE4-4BB8-ADF6-44B687350549}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71A06D10-5BE4-4BB8-ADF6-44B687350549}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71A06D10-5BE4-4BB8-ADF6-44B687350549}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FD8DF613-FBEC-410F-9076-DF19BB00DA95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FD8DF613-FBEC-410F-9076-DF19BB00DA95}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FD8DF613-FBEC-410F-9076-DF19BB00DA95}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FD8DF613-FBEC-410F-9076-DF19BB00DA95}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0E8698DB-B376-45A8-AD8E-630934CBB81B} = {FD64B5A5-3B70-4AE1-968E-7063F3A133A0}
+		{C742C2C1-EE52-4675-BAA5-5700B40F8AE2} = {FD64B5A5-3B70-4AE1-968E-7063F3A133A0}
 	EndGlobalSection
 EndGlobal
