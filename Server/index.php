@@ -23,6 +23,11 @@ if (isset($_GET['page'])) {
     include("footer.php");
     break;
 
+    case "command":
+    include("command.php");
+    include("footer");
+    break;
+
     default:
     include("login.php");
     include("footer.php");
