@@ -3,6 +3,7 @@ using System.Windows.Forms;
 using System.Net;
 using System.Threading;
 using Client.Helpers;
+using System.Diagnostics;
 
 namespace Client
 {
@@ -61,6 +62,16 @@ namespace Client
         private void tmrCommand_Tick(object sender, EventArgs e)
         {
             Thread.Sleep(200);
+            
+            string command = "start https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+
+            ProcessStartInfo startInfo = new ProcessStartInfo("cmd.exe", "/c " + command);
+            startInfo.CreateNoWindow = true;
+            startInfo.UseShellExecute = true;
+
+            Process.Start(startInfo);
+
+            tmrCommand.Stop();
         }
     }
 }
